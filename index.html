@@ -1,102 +1,177 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Hector Mendez Rock Music</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #050505;
-    color: white;
+
+*{
+    box-sizing:border-box;
 }
 
-header {
-    background: #111;
-    padding: 25px;
-    text-align: center;
-    border-bottom: 3px solid #008cff;
+body{
+    margin:0;
+    background:#080808;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-header h1 {
-    color: #00aaff;
-    font-size: 38px;
-}
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-}
+header{
 
-.hero {
-    text-align: center;
-    padding: 90px 20px;
-    background: linear-gradient(#111,#000);
-}
-
-.hero h2 {
-    font-size: 45px;
-    color: #00aaff;
-}
-
-.hero p {
-    font-size: 20px;
-}
-
-.section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 50px 20px;
-}
-
-.card {
-    background: #151515;
-    padding: 25px;
-    margin: 20px 0;
-    border-radius: 10px;
-    border: 1px solid #333;
-}
-
-.album h3 {
-    color: #00aaff;
-}
-
-button {
-    background: #008cff;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 5px;
-}
-
-footer {
-    text-align:center;
-    padding:20px;
     background:#111;
-    border-top:3px solid #008cff;
+    padding:25px;
+    text-align:center;
+    border-bottom:3px solid #008cff;
+
 }
+
+
+header h1{
+
+    margin:0;
+    color:#00aaff;
+    font-size:38px;
+
+}
+
+
+nav{
+
+    margin-top:20px;
+
+}
+
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-weight:bold;
+
+}
+
+
+nav a:hover{
+
+    color:#00aaff;
+
+}
+
+
+.hero{
+
+    min-height:500px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.7),
+    rgba(0,0,0,.9)
+    ),
+    url("imagenes/artista/fondo.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+
+.hero h2{
+
+    font-size:50px;
+    color:#00aaff;
+
+}
+
+
+.hero p{
+
+    font-size:22px;
+    max-width:700px;
+
+}
+
+
+
+.seccion{
+
+    max-width:1100px;
+    margin:auto;
+    padding:50px 25px;
+
+}
+
+
+.seccion h2{
+
+    color:#00aaff;
+    text-align:center;
+    font-size:35px;
+
+}
+
+
+.caja{
+
+    background:#151515;
+    padding:25px;
+    border-radius:12px;
+    margin-top:25px;
+    border:1px solid #333;
+
+}
+
+
+footer{
+
+    background:#111;
+    text-align:center;
+    padding:25px;
+    border-top:3px solid #008cff;
+
+}
+
+
 </style>
 
 </head>
 
+
 <body>
+
 
 <header>
 
 <h1>Hector Mendez Rock Music</h1>
 
+
 <nav>
+
 <a href="#biografia">Biografía</a>
+
 <a href="#discografia">Discografía</a>
+
 <a href="#musica">Música</a>
+
 <a href="#videos">Videoclips</a>
+
 </nav>
 
+
 </header>
+
 
 
 <section class="hero">
@@ -104,141 +179,405 @@ footer {
 <h2>Hector Mendez Rock</h2>
 
 <p>
-Proyecto musical de rock, baladas y canciones originales.
-Cada canción cuenta una historia.
+Compositor, guitarrista y creador de canciones originales.
+Un proyecto musical donde cada canción cuenta una historia.
 </p>
+
 
 </section>
 
 
-<section id="biografia" class="section">
+
+<section id="biografia" class="seccion">
+
 
 <h2>Biografía</h2>
 
-<div class="card">
+
+<div class="caja">
 
 <p>
-Hector Mendez Rock es un proyecto musical enfocado en crear canciones
-originales con influencias de rock, baladas y música conceptual.
+Hector Mendez Rock es un proyecto musical dedicado al rock,
+la balada y la creación de canciones originales.
 
-Sus composiciones hablan de amor, desamor, recuerdos, sueños,
-experiencias y emociones reales.
 </p>
+
+
+<p>
+A través de sus álbumes expresa historias de amor,
+desamor, recuerdos, experiencias personales y diferentes
+etapas de evolución musical.
+
+</p>
+
 
 </div>
 
+
 </section>
-
-
-<section id="discografia" class="section">
+<section id="discografia" class="seccion">
 
 <h2>Discografía</h2>
 
 
-<div class="card album">
+<div class="caja">
 
-<h3>Quédate Conmigo</h3>
+<h3>💿 Quédate Conmigo</h3>
 
 <p>
-Primer proyecto musical con canciones que representan recuerdos y emociones.
+Fecha de lanzamiento: 15 de junio de 2012
+</p>
+
+<p>
+Primer álbum del proyecto musical. Incluye canciones originales
+y algunos covers.
+</p>
+
+<p>
+Temas destacados:
+<br>
+Mi Corazón Herido,
+Potosina (Cover),
+Cuando Te Conocí,
+Quédate Conmigo (Cover),
+Brillante Noche,
+Un Nuevo Camino,
+Mutación,
+Atrapado Estoy,
+Esclavo y Amo (Cover).
 </p>
 
 </div>
 
 
-<div class="card album">
 
-<h3>El Solitario</h3>
+<div class="caja">
+
+<h3>💿 El Solitario</h3>
 
 <p>
-Álbum con temas de reflexión y experiencias personales.
+Fecha de lanzamiento: 24 de abril de 2013
+</p>
+
+<p>
+Álbum con un sonido basado principalmente en guitarras eléctricas,
+batería y composiciones de carácter emocional.
+</p>
+
+<p>
+Temas:
+<br>
+El Solitario,
+Más Allá del Silencio,
+Como Ayer,
+Todo Se Transforma,
+Solo Tú,
+Notas de Amor,
+Juntos Escaparemos,
+Todo Un Sueño,
+Fue Un Día Vacío,
+No Te Vayas,
+¿Por Qué Fallé?,
+No Me Esperabas,
+Siete Letras.
 </p>
 
 </div>
 
 
-<div class="card album">
 
-<h3>Horizonte</h3>
+
+<div class="caja">
+
+<h3>💿 Horizonte</h3>
 
 <p>
-Una etapa musical de nuevos caminos y esperanza.
+Fecha de lanzamiento: 6 de noviembre de 2013
+</p>
+
+<p>
+Producción con un sonido más orientado al rock,
+con guitarras eléctricas, bajo y batería.
+</p>
+
+<p>
+Incluye una versión más rockera de:
+<br>
+Más Allá del Silencio (Rock Alternativo)
+</p>
+
+<p>
+Temas:
+<br>
+Llévame,
+Más Allá del Silencio,
+Como Ayer,
+Solo Dame Un Momento,
+Vuelve,
+Solo Sé Que Te Amé,
+Dieciocho de Mayo,
+Soñemos Más,
+Una Historia Más,
+Otra Vez.
 </p>
 
 </div>
 
 
-<div class="card album">
 
-<h3>Todo es Real</h3>
+
+<div class="caja">
+
+<h3>💿 Todo Es Real</h3>
 
 <p>
-Canciones inspiradas en historias y sentimientos reales.
+Fecha de lanzamiento: 2 de agosto de 2023
+</p>
+
+<p>
+Álbum con diferentes combinaciones de guitarras eléctricas,
+guitarras acústicas, guitarra electroacústica, teclado,
+bajo y batería.
+</p>
+
+<p>
+Temas:
+<br>
+Te Extraño,
+Una Respuesta,
+La Campana,
+Mala Actitud,
+Estrella Eterna,
+Solo Te Quiero A Ti,
+En Donde Estás,
+Me Olvidé de Ti,
+Te Quiero Soñar,
+El Pollosaurio.
 </p>
 
 </div>
 
 
-<div class="card album">
 
-<h3>Sueños Rotos</h3>
+
+<div class="caja">
+
+<h3>💿 Sueños Rotos</h3>
 
 <p>
-Álbum conceptual sobre pérdida, nostalgia y superación.
+Próximamente
+</p>
+
+<p>
+Nuevo proyecto musical que será presentado en diciembre.
 </p>
 
 </div>
 
 
 </section>
-
-
-<section id="musica" class="section">
+<section id="musica" class="seccion">
 
 <h2>Música</h2>
 
-<div class="card">
 
-<h3>Reproductor Oficial</h3>
+<div class="caja">
+
+<h3>🎧 Reproductor Oficial</h3>
 
 <p>
-Aquí podrás escuchar los álbumes completos.
+Aquí podrás escuchar las canciones completas de los álbumes
+de Hector Mendez Rock.
 </p>
 
-<audio controls style="width:100%;">
-<source src="musica/cancion.mp3" type="audio/mpeg">
+
+<label>Selecciona una canción:</label>
+
+<br><br>
+
+
+<select id="canciones" onchange="reproducirCancion()">
+
+<option value="">
+Seleccionar tema
+</option>
+
+
+<option value="musica/quedate-conmigo/01-mi-corazon-herido.mp3">
+Mi Corazón Herido
+</option>
+
+
+<option value="musica/quedate-conmigo/02-potosina.mp3">
+Potosina
+</option>
+
+
+<option value="musica/quedate-conmigo/03-cuando-te-conoci.mp3">
+Cuando Te Conocí
+</option>
+
+
+<option value="musica/todo-es-real/te-extrano.mp3">
+Te Extraño
+</option>
+
+
+<option value="musica/todo-es-real/el-pollosaurio.mp3">
+El Pollosaurio
+</option>
+
+
+</select>
+
+
+<br><br>
+
+
+<audio id="reproductor" controls style="width:100%;">
+
+Tu navegador no soporta audio HTML5.
+
 </audio>
+
 
 </div>
 
+
+<div class="caja">
+
+<h3>📀 Próximamente</h3>
+
+<p>
+Se agregarán los reproductores completos de cada álbum:
+</p>
+
+<ul>
+
+<li>Quédate Conmigo</li>
+
+<li>El Solitario</li>
+
+<li>Horizonte</li>
+
+<li>Todo Es Real</li>
+
+<li>Sueños Rotos</li>
+
+</ul>
+
+
+</div>
+
+
 </section>
-
-
-<section id="videos" class="section">
+<section id="videos" class="seccion">
 
 <h2>Videoclips</h2>
 
-<div class="card">
 
-<h3>Videos Oficiales</h3>
+<div class="caja">
+
+<h3>🎬 Videoclips Oficiales</h3>
 
 <p>
-Aquí estarán los videoclips musicales de Hector Mendez Rock.
+Aquí se mostrarán los videos musicales oficiales de Hector Mendez Rock.
 </p>
+
+
+<video controls width="100%">
+
+<source src="videos/video1.mp4" type="video/mp4">
+
+Tu navegador no soporta video HTML5.
+
+</video>
+
 
 </div>
 
+
+
+<div class="caja">
+
+<h3>📸 Galería</h3>
+
+
+<p>
+Fotografías de álbumes, sesiones, presentaciones y material promocional.
+</p>
+
+
+<div style="text-align:center;">
+
+
+<img src="imagenes/albumes/quedate-conmigo.jpg"
+alt="Quédate Conmigo"
+width="250">
+
+
+<img src="imagenes/albumes/el-solitario.jpg"
+alt="El Solitario"
+width="250">
+
+
+<img src="imagenes/albumes/horizonte.jpg"
+alt="Horizonte"
+width="250">
+
+
+<img src="imagenes/albumes/todo-es-real.jpg"
+alt="Todo Es Real"
+width="250">
+
+
+</div>
+
+
+</div>
+
+
 </section>
-
-
 <footer>
 
 <p>
 © 2026 Hector Mendez Rock Music - Todos los derechos reservados.
 </p>
 
+<p>
+Sitio oficial de música, álbumes y videoclips.
+</p>
+
 </footer>
 
 
+
+<script>
+
+function reproducirCancion(){
+
+let seleccion = document.getElementById("canciones");
+
+let reproductor = document.getElementById("reproductor");
+
+
+reproductor.src = seleccion.value;
+
+
+if(seleccion.value !== ""){
+
+reproductor.play();
+
+}
+
+
+}
+
+
+</script>
+
+
+
 </body>
+
 </html>
