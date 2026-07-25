@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hector Mendez Rock Music</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0b0b0b;
+            color: white;
+        }
+
+        header {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #0077ff;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #00aaff;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(to bottom, #111, #000);
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            color: #00aaff;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .album {
+            background: #151515;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 1px solid #333;
+        }
+
+        .player {
+            background: #151515;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background: #111;
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid #0077ff;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hector Mendez Rock Music</h1>
+    <nav>
+        <a href="#biografia">Biografía</a>
+        <a href="#discografia">Discografía</a>
+        <a href="#musica">Música</a>
+        <a href="#videos">Videoclips</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Héctor Alfredo Méndez Campos</h2>
+    <p>Compositor, guitarrista y cantante mexicano. Cada canción cuenta una historia real.</p>
+</section>
+
+<section id="biografia" class="section">
+    <h2>Biografía</h2>
+    <p>
+        Héctor Alfredo Méndez Campos es un compositor y músico mexicano dedicado a la creación
+        de canciones originales de rock, balada y música conceptual. Sus álbumes exploran temas
+        como el amor, el desamor, los recuerdos, la esperanza y las experiencias personales.
+    </p>
+</section>
+
+<section id="discografia" class="section">
+    <h2>Discografía</h2>
+
+    <div class="album">
+        <h3>Todo es Real</h3>
+        <p>Álbum con canciones originales y composiciones inspiradas en experiencias reales.</p>
+    </div>
+
+    <div class="album">
+        <h3>Sueños Rotos</h3>
+        <p>Álbum conceptual sobre pérdida, nostalgia y superación.</p>
+    </div>
+
+    <div class="album">
+        <h3>Horizonte</h3>
+        <p>Producción enfocada en la reflexión, los recuerdos y los nuevos caminos.</p>
+    </div>
+</section>
+
+<section id="musica" class="section">
+    <h2>Música</h2>
+
+    <div class="player">
+        <h3>Reproductor Oficial</h3>
+        <p>Aquí podrás escuchar los álbumes completos cuando subamos los archivos de audio.</p>
+        <audio controls style="width:100%;">
+            <source src="audio/tema1.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio HTML5.
+        </audio>
+    </div>
+</section>
+
+<section id="videos" class="section">
+    <h2>Videoclips</h2>
+
+    <div class="player">
+        <h3>Video Oficial</h3>
+        <p>Aquí integraremos tus videoclips musicales.</p>
+        <video controls width="100%">
+            <source src="videos/video1.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+        </video>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Hector Mendez Rock Music - Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
