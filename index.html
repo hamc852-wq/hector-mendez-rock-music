@@ -23,6 +23,106 @@ header {
 }
 
 header h1 {
+    <img src="imagenes/el-solitario.png" alt="El Solitario">
+Horizonte
+
+Busca:
+
+<img src="imagenes/horizonte.jpg" alt="Horizonte">
+
+y cámbiala por:
+
+<img src="imagenes/horizonte.JPG" alt="Horizonte">
+Para el tamaño de las imágenes
+
+Busca esta parte:
+
+.card img {
+    width: 280px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+y reemplázala por:
+
+.card img {
+    width: 280px;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+Después haces Commit changes y GitHub actualizará la página.
+
+Mi recomendación
+
+En lugar de corregir solo esas tres líneas, yo aprovecharía para hacer una versión 2.0 de tu sitio, con un diseño mucho más profesional. Ya tenemos la información de los álbumes, así que podemos mejorar el aspecto sin volver a empezar desde cero.
+
+Así evitaremos hacer pequeñas correcciones cada vez y la página quedará lista para cuando empecemos a subir los MP3 y los videoclips. 🎸
+
+no borro nada solo lo pego?
+
+Correcto, Héctor. No borres todo el archivo. 👍
+
+Solo vas a editar las líneas específicas.
+
+Paso 1
+
+Abre:
+
+index.html
+
+y pulsa el lápiz ✏️ Edit.
+
+Paso 2
+
+Usa Ctrl + F para buscar cada línea y reemplazarla.
+
+Cambia esta:
+<img src="imagenes/el-solitario.jpg" alt="El Solitario">
+
+por esta:
+
+<img src="imagenes/el-solitario.png" alt="El Solitario">
+Cambia esta:
+<img src="imagenes/horizonte.jpg" alt="Horizonte">
+
+por esta:
+
+<img src="imagenes/horizonte.JPG" alt="Horizonte">
+Busca este bloque CSS:
+.card img {
+    width: 280px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+y reemplaza solo ese bloque por este:
+
+.card img {
+    width: 280px;
+    height: 380px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+Usé object-fit: contain porque así las portadas completas se verán sin recortarse, aunque tengan tamaños diferentes.
+
+Paso 3
+
+Cuando termines, haz clic en Commit changes.
+
+💡 No pegues el nuevo código al final del archivo. Hay que reemplazar esas líneas donde ya existen.
+
+Si no encuentras alguna línea con Ctrl + F, dímelo y te indicaré exactamente en qué parte del archivo está.
     color: #00aaff;
     margin: 0;
     font-size: 38px;
@@ -390,3 +490,15 @@ Todos los derechos reservados.
 </body>
 
 </html>
+
+<img src="imagenes/horizonte.JPG" alt="Horizonte">
+.card img {
+    width: 280px;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+Después haces Commit changes
