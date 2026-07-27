@@ -1,6 +1,8 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,7 +12,7 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: #050505;
     color: white;
 }
@@ -23,109 +25,9 @@ header {
 }
 
 header h1 {
-    <img src="imagenes/el-solitario.png" alt="El Solitario">
-Horizonte
-
-Busca:
-
-<img src="imagenes/horizonte.jpg" alt="Horizonte">
-
-y cámbiala por:
-
-<img src="imagenes/horizonte.JPG" alt="Horizonte">
-Para el tamaño de las imágenes
-
-Busca esta parte:
-
-.card img {
-    width: 280px;
-    max-width: 100%;
-    display: block;
-    margin: auto;
-    border-radius: 10px;
-}
-
-y reemplázala por:
-
-.card img {
-    width: 280px;
-    height: 380px;
-    object-fit: cover;
-    display: block;
-    margin: auto;
-    border-radius: 10px;
-}
-
-Después haces Commit changes y GitHub actualizará la página.
-
-Mi recomendación
-
-En lugar de corregir solo esas tres líneas, yo aprovecharía para hacer una versión 2.0 de tu sitio, con un diseño mucho más profesional. Ya tenemos la información de los álbumes, así que podemos mejorar el aspecto sin volver a empezar desde cero.
-
-Así evitaremos hacer pequeñas correcciones cada vez y la página quedará lista para cuando empecemos a subir los MP3 y los videoclips. 🎸
-
-no borro nada solo lo pego?
-
-Correcto, Héctor. No borres todo el archivo. 👍
-
-Solo vas a editar las líneas específicas.
-
-Paso 1
-
-Abre:
-
-index.html
-
-y pulsa el lápiz ✏️ Edit.
-
-Paso 2
-
-Usa Ctrl + F para buscar cada línea y reemplazarla.
-
-Cambia esta:
-<img src="imagenes/el-solitario.jpg" alt="El Solitario">
-
-por esta:
-
-<img src="imagenes/el-solitario.png" alt="El Solitario">
-Cambia esta:
-<img src="imagenes/horizonte.jpg" alt="Horizonte">
-
-por esta:
-
-<img src="imagenes/horizonte.JPG" alt="Horizonte">
-Busca este bloque CSS:
-.card img {
-    width: 280px;
-    max-width: 100%;
-    display: block;
-    margin: auto;
-    border-radius: 10px;
-}
-
-y reemplaza solo ese bloque por este:
-
-.card img {
-    width: 280px;
-    height: 380px;
-    object-fit: contain;
-    display: block;
-    margin: auto;
-    border-radius: 10px;
-}
-
-Usé object-fit: contain porque así las portadas completas se verán sin recortarse, aunque tengan tamaños diferentes.
-
-Paso 3
-
-Cuando termines, haz clic en Commit changes.
-
-💡 No pegues el nuevo código al final del archivo. Hay que reemplazar esas líneas donde ya existen.
-
-Si no encuentras alguna línea con Ctrl + F, dímelo y te indicaré exactamente en qué parte del archivo está.
     color: #00aaff;
+    font-size: 40px;
     margin: 0;
-    font-size: 38px;
 }
 
 nav {
@@ -143,82 +45,138 @@ nav a:hover {
     color: #00aaff;
 }
 
+
 .hero {
+
     text-align: center;
     padding: 80px 20px;
     background: linear-gradient(#111,#000);
+
 }
+
 
 .hero h2 {
-    font-size: 45px;
+
     color: #00aaff;
+    font-size: 45px;
+
 }
 
+
 .hero p {
+
     font-size: 22px;
     max-width: 800px;
     margin: auto;
+
 }
 
+
 .section {
+
     max-width: 1100px;
     margin: auto;
     padding: 50px 20px;
+
 }
+
 
 .section h2 {
-    color: #00aaff;
+
     text-align: center;
+    color: #00aaff;
     font-size: 32px;
+
 }
+
 
 .card {
+
     background: #111;
     border: 1px solid #333;
-    border-radius: 12px;
+    border-radius: 15px;
     padding: 25px;
-    margin: 25px 0;
+    margin: 30px 0;
+
 }
 
+
+/* Todas las portadas tendrán el mismo tamaño */
+
 .card img {
+
     width: 280px;
-    max-width: 100%;
+    height: 380px;
+    object-fit: contain;
     display: block;
     margin: auto;
     border-radius: 10px;
+    background: #000;
+
 }
 
+
 .card h3 {
+
     color: #00aaff;
     text-align: center;
     font-size: 28px;
+
 }
 
+
+.card p {
+
+    line-height: 1.6;
+
+}
+
+
+ul {
+
+    line-height: 1.8;
+
+}
+
+
 footer {
+
     background: #111;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     border-top: 3px solid #0077ff;
+
 }
+
 
 </style>
 
 </head>
 
+
 <body>
+
 
 <header>
 
 <h1>Hector Mendez Rock</h1>
 
+
 <nav>
+
 <a href="#biografia">Biografía</a>
+
 <a href="#discografia">Discografía</a>
+
 <a href="#musica">Música</a>
+
 <a href="#videos">Videos</a>
+
 </nav>
 
+
 </header>
+
 
 
 <section class="hero">
@@ -230,7 +188,7 @@ Proyecto musical de rock, balada y canciones originales.
 Cada canción cuenta una historia.
 </p>
 
-</section>
+</section>  
 <section id="biografia" class="section">
 
 <h2>Biografía</h2>
@@ -238,16 +196,25 @@ Cada canción cuenta una historia.
 <div class="card">
 
 <p>
-Hector Mendez Rock es un proyecto musical dedicado a la creación
-de canciones originales de rock, balada y música conceptual.
 
-Las composiciones hablan de experiencias, emociones, historias de amor,
-desamor, recuerdos y momentos importantes de la vida.
+Hector Mendez Rock es un proyecto musical dedicado a la composición
+de canciones originales de rock, baladas y música conceptual.
+
 </p>
 
 <p>
-Con influencias del rock clásico, rock alternativo y baladas,
-cada álbum representa una etapa diferente del camino musical.
+
+Cada álbum representa una etapa diferente dentro de la trayectoria
+musical, con historias inspiradas en experiencias personales,
+emociones, recuerdos, esperanza y superación.
+
+</p>
+
+<p>
+
+El proyecto busca compartir música con identidad propia, donde cada
+canción cuenta una historia y transmite un mensaje.
+
 </p>
 
 </div>
@@ -255,9 +222,11 @@ cada álbum representa una etapa diferente del camino musical.
 </section>
 
 
+
 <section id="discografia" class="section">
 
 <h2>Discografía</h2>
+
 
 
 <div class="card">
@@ -266,15 +235,15 @@ cada álbum representa una etapa diferente del camino musical.
 
 <h3>Quédate Conmigo</h3>
 
-<p>
-Fecha de lanzamiento: 15 de junio de 2012
-</p>
+<p><strong>Fecha de lanzamiento:</strong> 15 de junio de 2012</p>
 
 <p>
+
 Primer álbum con canciones originales y algunas versiones de covers.
+
 </p>
 
-<h4>Temas:</h4>
+<h4>Temas</h4>
 
 <ul>
 
@@ -286,37 +255,39 @@ Primer álbum con canciones originales y algunas versiones de covers.
 <li>Un Nuevo Camino</li>
 <li>Mutación</li>
 <li>Atrapado Estoy</li>
-<li>Esclavo Y Amo (Cover)</li>
+<li>Esclavo y Amo (Cover)</li>
 
 </ul>
 
 </div>
+
+
+
 <div class="card">
 
-<img src="imagenes/el-solitario.jpg" alt="El Solitario">
+<img src="imagenes/el-solitario.png" alt="El Solitario">
 
 <h3>El Solitario</h3>
 
-<p>
-Fecha de lanzamiento: 24 de abril de 2013
-</p>
+<p><strong>Fecha de lanzamiento:</strong> 24 de abril de 2013</p>
 
 <p>
-Álbum con canciones de rock y baladas.
-La producción incluye guitarras eléctricas,
-batería y diferentes arreglos musicales.
+
+Álbum con canciones de rock y baladas que consolidan el estilo musical
+del proyecto.
+
 </p>
 
-<h4>Temas:</h4>
+<h4>Temas</h4>
 
 <ul>
 
 <li>El Solitario</li>
-<li>Más Allá Del Silencio</li>
+<li>Más Allá del Silencio</li>
 <li>Como Ayer</li>
 <li>Todo Se Transforma</li>
 <li>Solo Tú</li>
-<li>Notas De Amor</li>
+<li>Notas de Amor</li>
 <li>Juntos Escaparemos</li>
 <li>Todo Un Sueño</li>
 <li>Fue Un Día Vacío</li>
@@ -328,57 +299,52 @@ batería y diferentes arreglos musicales.
 </ul>
 
 </div>
-
-
 <div class="card">
 
-<img src="imagenes/horizonte.jpg" alt="Horizonte">
+<img src="imagenes/horizonte.JPG" alt="Horizonte">
 
 <h3>Horizonte</h3>
 
-<p>
-Fecha de lanzamiento: 6 de noviembre de 2013
-</p>
+<p><strong>Fecha de lanzamiento:</strong> 6 de noviembre de 2013</p>
 
 <p>
-Álbum con un sonido más orientado al rock,
-incluyendo guitarras eléctricas, bajo y batería.
-La versión de "Más Allá Del Silencio" tiene un estilo
-más cercano al rock alternativo.
+Álbum con un sonido más orientado al rock, incluyendo guitarras eléctricas,
+bajo y batería. Representa una evolución musical dentro del proyecto.
 </p>
 
-<h4>Temas:</h4>
+<h4>Temas</h4>
 
 <ul>
-
 <li>Llévame</li>
-<li>Más Allá Del Silencio</li>
+<li>Más Allá del Silencio</li>
 <li>Como Ayer</li>
 <li>Solo Dame Un Momento</li>
 <li>Vuelve</li>
 <li>Solo Sé Que Te Amé</li>
-<li>Dieciocho De Mayo</li>
+<li>Dieciocho de Mayo</li>
 <li>Soñemos Más</li>
 <li>Una Historia Más</li>
 <li>Otra Vez</li>
-
 </ul>
 
 </div>
+
+
+
+<div class="card">
+
 <img src="imagenes/todo-es-real.jpg" alt="Todo Es Real">
 
 <h3>Todo Es Real</h3>
 
-<p>
-Fecha de lanzamiento: 2 de agosto de 2023
-</p>
+<p><strong>Fecha de lanzamiento:</strong> 2 de agosto de 2023</p>
 
 <p>
-Álbum con canciones originales que combinan rock,
-balada y elementos de guitarra eléctrica,
-guitarra electroacústica y teclado.
+Álbum con canciones originales que combinan rock, balada,
+guitarras eléctricas, guitarra electroacústica, teclado y batería.
 </p>
-<h4>Temas:</h4>
+
+<h4>Temas</h4>
 
 <ul>
 
@@ -391,36 +357,14 @@ guitarra electroacústica y teclado.
 <li>¿En Dónde Estás?</li>
 <li>Me Olvidé De Ti</li>
 <li>Te Quiero Soñar</li>
-<li>El Pollo Saurio</li>
-
-</ul>
-
-<h4>Instrumentación destacada:</h4>
-
-<ul>
-
-<li>Te Extraño: guitarra electroacústica, guitarra acústica, teclado, batería y bajo.</li>
-
-<li>Una Respuesta: guitarra electroacústica, guitarras eléctricas y batería.</li>
-
-<li>La Campana: guitarra eléctrica y teclado.</li>
-
-<li>Estrella Eterna: guitarra eléctrica y teclado.</li>
-
-<li>Solo Te Quiero A Ti: guitarra eléctrica y teclado.</li>
-
-<li>Mala Actitud: guitarra eléctrica.</li>
-
-<li>El Pollo Saurio: guitarra eléctrica.</li>
-
-<li>Me Olvidé De Ti: guitarra eléctrica.</li>
-
-<li>Te Quiero Soñar: tres guitarras eléctricas y batería.</li>
+<li>El Pollosaurio</li>
 
 </ul>
 
 </div>
-    <section id="musica" class="section">
+
+</section>
+<section id="musica" class="section">
 
 <h2>Música</h2>
 
@@ -430,15 +374,14 @@ guitarra electroacústica y teclado.
 
 <p>
 Próximamente podrás escuchar las canciones de Hector Mendez Rock
-desde esta sección.
-</p>
-<p>
-Los archivos de audio serán agregados en la carpeta:
+directamente desde esta página.
 </p>
 
-<pre>
-musica/
-</pre>
+<p>
+Los archivos de audio se almacenarán en la carpeta:
+</p>
+
+<pre>musica/</pre>
 
 </div>
 
@@ -455,18 +398,16 @@ musica/
 <h3>Videos Oficiales</h3>
 
 <p>
-Aquí se agregarán los videoclips oficiales,
-historias visuales y proyectos audiovisuales
+Aquí se publicarán los videoclips oficiales,
+presentaciones, avances y material audiovisual
 de Hector Mendez Rock.
 </p>
 
 <p>
-Los videos serán agregados en la carpeta:
+Los videos estarán organizados en la carpeta:
 </p>
 
-<pre>
-videos/
-</pre>
+<pre>videos/</pre>
 
 </div>
 
@@ -476,29 +417,17 @@ videos/
 
 <footer>
 
+<p><strong>Hector Mendez Rock</strong></p>
+
 <p>
-© 2026 Hector Mendez Rock
+Proyecto musical de Héctor Alfredo Méndez Campos.
 </p>
 
 <p>
-Todos los derechos reservados.
+© 2026 Todos los derechos reservados.
 </p>
 
 </footer>
 
-
 </body>
-
 </html>
-
-<img src="imagenes/horizonte.JPG" alt="Horizonte">
-.card img {
-    width: 280px;
-    height: 380px;
-    object-fit: cover;
-    display: block;
-    margin: auto;
-    border-radius: 10px;
-}
-
-Después haces Commit changes
